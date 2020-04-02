@@ -33,6 +33,20 @@ const App = () => {
           <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
         </Helmet>
       <Content>
+        <div className="dynamic-nit">
+          <h1>Fala meu bruxo, ainda não tem versão <span>pra este dispositivo</span> :/</h1>
+          <div className="dynamic-nit-icons">
+            <a href="https://github.com/julianoalvescode" rel="noopener noreferrer" target="_blank">
+              <GoMarkGithub color="#fff"/>
+            </a>
+            <a href="https://www.linkedin.com/in/juliano-alves-73133a183/" rel="noopener noreferrer" target="_blank">
+              <FaLinkedin color="#fff"/>
+            </a>
+            <a href="mailto:contato.julianoalvess@gmail.com" rel="noopener noreferrer" target="_blank">
+              <MdEmail color="#fff"/>
+            </a>
+          </div>
+        </div>
         <div className="dynamic-main">
           <div className="dynamic-content">
             <div className="dynamic-path">

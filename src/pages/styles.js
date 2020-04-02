@@ -9,11 +9,70 @@ export const Content = styled.div`
     flex-direction: column;
     align-items: center;
 
+    .dynamic-nit {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+
+        @media (min-width: 1200px) {
+            display: none;
+        }
+
+
+        h1 {
+            color: #fff;
+
+            span {
+                color: #FF79C6;
+                font-weight: bold;
+            }
+
+        }
+
+        a {
+            padding: 0 .4rem;
+        }
+
+    }
+
     .dynamic-main {
         background-color: #fff;
         display: flex;
         border-radius: 12px;
-        width: 75%;
+        width: 70%;
+        
+        @media (max-width: 1200px) {
+            display: none;
+        }
+
+        @media (width: 1280px) {
+            padding: 0.6rem 0;
+        }
+
+        @media (min-width: 1600px) {
+            width: 63%;
+        }
+
+        @media (min-width: 1920px) {
+            width: 50%;
+        }
+
+        @media (min-width: 2160px) {
+            width: 50%;
+        }
+
+        @media (min-width: 2048px) {
+            width: 50%;
+        }
+
+        @media (min-width: 2560px) {
+            width: 40%;
+        }
+
+        @media (min-width: 3200px) {
+            width: 35%;
+        }
+
         justify-content: space-around;
         align-items: center;
         padding: 2.5rem 0;    
@@ -87,5 +146,9 @@ export const Footer = styled.footer`
     p {
         color: #fff;
     }
+
+    @media (max-width: 1200px) {
+            display: none;
+        }
 
 `;
