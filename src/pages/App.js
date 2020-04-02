@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet'
-import Clipboard from 'react-clipboard.js';
 
 import GlobalStyle from './../styles/globalStyle'
 import { Content, BoxDynamic, Footer } from './styles'
@@ -11,8 +10,6 @@ import { MdEmail } from 'react-icons/md'
 import Ranger  from './components/Ranger'
 import ColorPicker from './components/Color'
 import TextArea from './components/Textarea'
-
-
 
 
 const App = () => {
@@ -28,7 +25,7 @@ const App = () => {
     <>
       <GlobalStyle/>
         <Helmet>
-          <title>App CSS</title>
+          <title>Dynamic Border</title>
           <meta name="author" content="Juliano Alves"/>
           <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
         </Helmet>
