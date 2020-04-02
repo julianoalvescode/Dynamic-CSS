@@ -12,15 +12,15 @@ export const Content = styled.div`
     .dynamic-main {
         background-color: #fff;
         display: flex;
-        border-radius: 7px;
-        width: 60%;
+        border-radius: 12px;
+        width: 75%;
         justify-content: space-around;
         align-items: center;
         padding: 2.5rem 0;    
     }
 
     .dynamic-content {
-        width: 35%;
+        width: 45%;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -44,6 +44,10 @@ export const Content = styled.div`
         
     }
 
+    .dynamic-csscode {
+        width: 100%;
+    }
+
     .dynamic-color {
         margin: 15px 0;
         display: flex;
@@ -62,9 +66,6 @@ export const Content = styled.div`
 
 `;
 
-export const Caixa = styled.div`
-
-`
 
 export const BoxDynamic = styled.div`
 
@@ -73,5 +74,18 @@ export const BoxDynamic = styled.div`
     border-radius: ${props => props.radiusTopLeft + 'px'} ${props => props.radiusTopRight + 'px'} ${props => props.radiusBottomRight + 'px'} ${props => props.radiusBottomLeft + 'px'} ;
     background-color: ${props => props.color};
 
+
+`;
+
+export const Footer = styled.footer`
+
+    width: 20%;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+
+    p {
+        color: #fff;
+    }
 
 `;

@@ -3,11 +3,16 @@ import { Helmet } from 'react-helmet'
 import Clipboard from 'react-clipboard.js';
 
 import GlobalStyle from './../styles/globalStyle'
+import { Content, BoxDynamic, Footer } from './styles'
+import { GoMarkGithub } from 'react-icons/go'
+import { FaLinkedin } from 'react-icons/fa'
+import { MdEmail } from 'react-icons/md'
 
 import Ranger  from './components/Ranger'
 import ColorPicker from './components/Color'
+import TextArea from './components/Textarea'
 
-import { Content, BoxDynamic } from './styles'
+
 
 
 const App = () => {
@@ -19,7 +24,6 @@ const App = () => {
 
   const [ colorMain, setColor ] = useState('#F4194A')
 
-
   return(
     <>
       <GlobalStyle/>
@@ -29,7 +33,6 @@ const App = () => {
           <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"/>
         </Helmet>
       <Content>
-      
         <div className="dynamic-main">
           <div className="dynamic-content">
             <div className="dynamic-path">
@@ -55,15 +58,26 @@ const App = () => {
               <ColorPicker set={setColor}/>
             </div>
             <div className="dynamic-color">
-              <h4 className="dynamic-color-title">Code CSS</h4>
-              <Clipboard component="p" data-clipboard-text={colorMain}>
-                copy to clipboard
-              </Clipboard>
+              <div className="dynamic-csscode">
+                <h4 className="dynamic-color-title">Code CSS</h4>
+                <TextArea values={{TopLeft, TopRight, BottomRight, BottomLeft, colorMain}} color={colorMain}/>
+              </div>
             </div>
           </div>
         <BoxDynamic color={colorMain} radiusTopLeft={TopLeft} radiusTopRight={TopRight} radiusBottomRight={BottomRight} radiusBottomLeft={BottomLeft}/>
         </div>
-
+        <Footer>
+          <p>Developed by Juliano Alves</p>
+          <a href="https://github.com/julianoalvescode" rel="noopener noreferrer" target="_blank">
+            <GoMarkGithub color="#fff"/>
+          </a>
+          <a href="https://www.linkedin.com/in/juliano-alves-73133a183/" rel="noopener noreferrer" target="_blank">
+            <FaLinkedin color="#fff"/>
+          </a>
+          <a href="mailto:contato.julianoalvess@gmail.com" rel="noopener noreferrer" target="_blank">
+            <MdEmail color="#fff"/>
+          </a>
+        </Footer>
       </Content>
     </>
   )

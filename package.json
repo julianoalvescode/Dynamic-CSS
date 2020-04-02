@@ -8,10 +8,10 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.1.0",
     "react": "^16.13.1",
-    "react-clipboard.js": "^2.0.16",
     "react-color": "^2.18.0",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.9.0",
     "react-scripts": "3.4.1",
     "styled-components": "^5.0.1"
   },

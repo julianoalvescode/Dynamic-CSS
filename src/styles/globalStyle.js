@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Nunito', Arial, Helvetica, sans-serif;
         font-size: .9rem;
-        background-color: #f2f9ff;
+        background-color: rgb(40,42,54);
     }
 
 
